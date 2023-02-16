@@ -17,13 +17,17 @@ body, ul {
     padding: 0;
 }
 
+h2 {
+    margin-bottom: 0.5rem;
+}
+
 h3, h4 {
     margin-bottom: 0;
 }
 
 p {
     color: grey;
-    margin-top: 0;
+    margin: 0;
 }
 
 .container {
@@ -89,6 +93,10 @@ p {
     aspect-ratio: 1 / 1;
 }
 
+.header .user .profile-picture {
+    height: 5rem;
+}
+
 .profile-name {
     font-size: 1.5rem;
 }
@@ -107,7 +115,6 @@ p {
     color: var(--bg-clr-white);
 }
 
-
 .nav {
     background-color: var(--bg-clr-blue);
     grid-row: 1/-1;
@@ -115,8 +122,8 @@ p {
     font-weight: 700;
 }
 
-h1, nav li {
-    padding: 1rem;
+nav li {
+    padding-bottom: 2rem;
 }
 
 nav p, h1 {
@@ -124,6 +131,7 @@ nav p, h1 {
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
 }
 
 nav img {
@@ -138,7 +146,7 @@ nav img {
     display: grid;
     grid-template: 1fr 1fr / 3fr 1fr;
     column-gap: 1.5rem;
-    padding: 1rem 2rem 3rem 1rem;
+    padding: 1rem 2rem 2rem 1rem;
     padding-right: 2rem;
 }
 
@@ -165,16 +173,12 @@ nav img {
     padding: 1rem;
 }
 
-.ann {
-
-}
-
 .ann-content, .trending-content {
     background-color: var(--bg-clr-white);
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 0.5rem;;
 }
 
@@ -184,18 +188,4 @@ nav img {
 
 .ann-content>div:last-child {
     border-bottom: none;
-}
-
-.trending {
-    
-}
-
-
-
-.template {
-    height: 400px;
-    overflow: auto;
-}
-.template img {
-    max-width: 100%;
 }
